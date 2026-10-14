@@ -1,1 +1,258 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffaf7;
+    color: #49352f;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 22px 8%;
+    background-color: #ffffff;
+}
+
+.logo {
+    color: #a87552;
+    font-family: Georgia, serif;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.menu a {
+    color: #49352f;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #c18b65;
+}
+
+
+.banner {
+    min-height: 440px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255, 247, 239, 0.96),
+            rgba(255, 247, 239, 0.55)
+        ),
+        url("https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1600&q=85")
+        center / cover no-repeat;
+}
+
+.banner-conteudo {
+    max-width: 550px;
+}
+
+.subtitulo {
+    color: #b18160;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.banner h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(36px, 5vw, 54px);
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.banner-conteudo > p:not(.subtitulo) {
+    max-width: 440px;
+    margin-bottom: 25px;
+}
+
+
+.botao {
+    display: inline-block;
+    background-color: #a87552;
+    color: #ffffff;
+    padding: 13px 27px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #805338;
+}
+
+
+.produtos {
+    padding: 75px 8%;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-secao h2,
+.sobre h2,
+.contato h2 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+
+.lista-produtos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 220px;
+    max-width: 300px;
+
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(90, 60, 40, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 22px rgba(90, 60, 40, 0.14);
+}
+
+.produto img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.produto-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    padding: 20px;
+}
+
+.produto-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.produto-info p {
+    color: #8a7770;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.preco {
+    color: #a87552;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+.botao-comprar {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    padding: 11px;
+
+    background-color: #f3e5da;
+    color: #805338;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.botao-comprar:hover {
+    background-color: #e6cbb5;
+}
+
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 8%;
+    background-color: #f4e8df;
+    text-align: center;
+}
+
+.sobre-conteudo {
+    max-width: 700px;
+}
+
+.sobre-conteudo > p:last-child {
+    margin-top: 15px;
+}
+
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.observacao {
+    color: #8a7770;
+    font-size: 12px;
+}
+
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    padding: 25px 8%;
+    background-color: #49352f;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+
+
